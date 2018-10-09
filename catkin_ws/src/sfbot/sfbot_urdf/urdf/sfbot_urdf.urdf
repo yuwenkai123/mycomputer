@@ -1,0 +1,516 @@
+<robot
+  name="sfbot_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.031268 2.0018E-06 0.067248"
+        rpy="0 0 0" />
+      <mass
+        value="1.1516" />
+      <inertia
+        ixx="0.01416"
+        ixy="2.8466E-08"
+        ixz="0.0017756"
+        iyy="0.01343"
+        iyz="1.8491E-07"
+        izz="0.012176" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -0.000612321545233219 2.08166817117217E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0773443557044833" />
+      <inertia
+        ixx="4.60946783980502E-05"
+        ixy="1.17803550583178E-20"
+        ixz="-3.3881317890172E-20"
+        iyy="8.77422038732554E-05"
+        iyz="-2.01081433951639E-18"
+        izz="4.60946783980502E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel"
+    type="continuous">
+    <origin
+      xyz="0.0111428005587439 0.12925 -0.00723574770211178"
+      rpy="4.81950779594111E-14 0.0264945284170306 1.27675647831892E-15" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.66533453693773E-16 0.0056123215452332 6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0773443557044832" />
+      <inertia
+        ixx="4.60946783980502E-05"
+        ixy="1.68576967741622E-20"
+        ixz="1.77612221127386E-20"
+        iyy="8.77422038732552E-05"
+        iyz="-3.5321028100135E-22"
+        izz="4.60946783980501E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel"
+    type="continuous">
+    <origin
+      xyz="0.0111428005587439 -0.13425 -0.00723574770211191"
+      rpy="0 0.00319851378007502 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="omni_link">
+    <inertial>
+      <origin
+        xyz="4.16333634234434E-17 -0.0123279860877339 -0.0118088502268488"
+        rpy="0 0 0" />
+      <mass
+        value="0.00453987148064387" />
+      <inertia
+        ixx="9.83947682477902E-07"
+        ixy="1.21760986167806E-21"
+        ixz="1.63450889040478E-21"
+        iyy="1.31249550893875E-06"
+        iyz="-1.53758889588396E-07"
+        izz="1.07130123051794E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/omni_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/omni_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="omni"
+    type="continuous">
+    <origin
+      xyz="-0.149 0 -0.002"
+      rpy="8.67361737988402E-17 -3.08148791101958E-32 -1.90669324230065" />
+    <parent
+      link="base_link" />
+    <child
+      link="omni_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="omni_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 -2.77555756156289E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0194601178400639" />
+      <inertia
+        ixx="2.14113976533056E-06"
+        ixy="-9.52912065661088E-22"
+        ixz="-1.58818677610181E-22"
+        iyy="3.193957958419E-06"
+        iyz="-1.27054942088145E-21"
+        izz="2.14113976533056E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/omni_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/omni_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="omni_wheel"
+    type="continuous">
+    <origin
+      xyz="0 -0.017 -0.03374"
+      rpy="3.14159265358979 -1.07204020848646 -1.5707963267949" />
+    <parent
+      link="omni_link" />
+    <child
+      link="omni_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.00116439147312714 4.41208760498801E-10 0.0189284573767456"
+        rpy="0 0 0" />
+      <mass
+        value="0.148482326477962" />
+      <inertia
+        ixx="6.853078563179E-05"
+        ixy="3.32222810407398E-13"
+        ixz="1.39067547118918E-06"
+        iyy="6.54042842831123E-05"
+        iyz="-3.02067953595139E-12"
+        izz="9.41338978203851E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar"
+    type="fixed">
+    <origin
+      xyz="0 0 0.038"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="0.00399310539548198 0.00255704494584771 0.000513929215761377"
+        rpy="0 0 0" />
+      <mass
+        value="0.0192165264496742" />
+      <inertia
+        ixx="2.76975918992476E-05"
+        ixy="-4.88427261690366E-09"
+        ixz="4.04259233955489E-10"
+        iyy="7.233544866334E-07"
+        iyz="3.27508784952676E-07"
+        izz="2.71788392198678E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.00784313725490196 0.23921568627451 0.823529411764706 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sfbot_urdf/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera"
+    type="fixed">
+    <origin
+      xyz="-0.100151001122379 0 0.366"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+	<gazebo>
+	<plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+
+	<alwaysOn>true</alwaysOn>
+	
+	<rosDebugLevel>Debug</rosDebugLevel>
+
+        <legacyMode>true</legacyMode>
+
+	<updateRate>30.0</updateRate>
+
+	<leftJoint>right_wheel</leftJoint>
+
+	<rightJoint>left_wheel</rightJoint>
+
+	<wheelSeparation>0.2585</wheelSeparation>
+
+	<wheelAcceleration>0</wheelAcceleration>
+        
+        <wheelTorque>5</wheelTorque> 
+	
+        <odometrySource>1</odometrySource>
+
+	<publishTf>true</publishTf>
+
+	<wheelDiameter>0.095</wheelDiameter>
+
+        <publishWheelTF>true</publishWheelTF>
+        
+	<publishWheelJointState>true</publishWheelJointState>
+
+
+	<torque>20</torque>
+
+	<commandTopic>cmd_vel</commandTopic>
+
+	<odometryTopic>odom</odometryTopic>
+
+	<odometryFrame>odom</odometryFrame>
+
+	<robotBaseFrame>base_link</robotBaseFrame>
+
+	</plugin>
+
+        </gazebo>
+
+
+        <gazebo reference="lidar_link">
+
+        <sensor type="ray" name="laser_sensor">
+
+          <pose>0 0 0 0 0 0</pose>
+
+          <visualize>False</visualize>
+
+          <update_rate>40</update_rate>
+
+          <ray>
+
+            <scan>
+
+              <horizontal>
+
+                <samples>720</samples>
+
+                <resolution>1</resolution>
+
+                <min_angle>-3.14</min_angle>
+
+                <max_angle>3.14</max_angle>
+
+              </horizontal>
+
+            </scan>
+
+            <range>
+
+              <min>0.10</min>
+
+              <max>30.0</max>
+
+              <resolution>0.01</resolution>
+
+            </range>
+
+            <noise>
+
+              <type>gaussian</type>
+
+              <!-- Noise parameters based on published spec for Hokuyo laser
+
+                   achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
+
+                   stddev of 0.01m will put 99.7% of samples within 0.03m of the true
+
+                   reading. -->
+
+              <mean>0.0</mean>
+
+              <stddev>0.01</stddev>
+
+            </noise>
+
+          </ray>
+
+          <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+
+            <topicName>/scan</topicName>
+
+            <frameName>lidar_link</frameName>
+
+          </plugin>
+
+        </sensor>
+
+      </gazebo>
+
+
+     <gazebo reference="camera_link">  
+      <sensor type="depth" name="camera">
+        <always_on>true</always_on>
+        <update_rate>20.0</update_rate>
+        <camera>
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <format>B8G8R8</format>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>8.0</far>
+          </clip>
+        </camera>
+        <plugin name="kinect_camera_controller" filename="libgazebo_ros_openni_kinect.so">
+          <cameraName>camera</cameraName>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>10</updateRate>
+          <imageTopicName>rgb/image_raw</imageTopicName>
+          <depthImageTopicName>depth/image_raw</depthImageTopicName>
+          <pointCloudTopicName>depth/points</pointCloudTopicName>
+          <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+          <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+          <frameName>camera_link</frameName>
+          <baseline>0.1</baseline>
+          <distortion_k1>0.0</distortion_k1>
+          <distortion_k2>0.0</distortion_k2>
+          <distortion_k3>0.0</distortion_k3>
+          <distortion_t1>0.0</distortion_t1>
+          <distortion_t2>0.0</distortion_t2>
+          <pointCloudCutoff>0.4</pointCloudCutoff>
+        </plugin>
+      </sensor>
+    </gazebo>
+</robot>

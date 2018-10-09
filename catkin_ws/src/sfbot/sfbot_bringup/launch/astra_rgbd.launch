@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="$(find sfbot_bringup)/launch/astra_uvc.launch"/>
+  <include file="$(find astra_launch)/launch/astrapro.launch"/>
+
+</launch>

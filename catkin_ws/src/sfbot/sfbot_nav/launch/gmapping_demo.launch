@@ -1,0 +1,8 @@
+<launch>
+	
+  <include file="$(find sfbot_nav)/launch/sfbot_gmapping.launch"/>
+  <include file="$(find sfbot_nav)/launch/sfbot_move_base.launch"/>
+
+  <arg name="rviz_view" default="false" />
+  <include if="$(arg rviz_view)" file="$(find sfbot_rviz)/launch/gmapping_view.launch" />
+</launch>

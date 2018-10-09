@@ -1,0 +1,8 @@
+prefix=/home/sfbot/catkin_ws/devel
+
+Name: mx_sensor
+Description: Description of mx_sensor
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sfbot/catkin_ws/devel/lib 
+Requires: 

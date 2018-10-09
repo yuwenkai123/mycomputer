@@ -1,0 +1,10 @@
+<launch>
+
+  <include file="$(find sfbot_chassis)/launch/chassis_start.launch"/>
+  <include file="$(find sfbot_bringup)/launch/urdf.launch"/>
+  <node name="sfbot_teleop" pkg="sfbot_teleop" type="sfbot_teleop_keyboard.py" output="screen">
+  <param name="~speed"    value="0.3"/>
+  <param name="~turn"    value="1.0"/>
+  </node>
+
+</launch>

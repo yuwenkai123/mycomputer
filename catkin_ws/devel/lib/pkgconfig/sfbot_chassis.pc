@@ -1,0 +1,8 @@
+prefix=/home/sfbot/catkin_ws/devel
+
+Name: sfbot_chassis
+Description: Description of sfbot_chassis
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sfbot/catkin_ws/devel/lib 
+Requires: 

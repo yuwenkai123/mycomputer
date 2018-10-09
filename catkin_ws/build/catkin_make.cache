@@ -1,0 +1,2 @@
+rplidar_ros:sfbot/sfbot_bringup:sfbot/sfbot_chassis/ros_arduino_bridge:sfbot/sfbot_chassis/ros_arduino_firmware:sfbot/sfbot_chassis/ros_arduino_msgs:sfbot/sfbot_chassis/ros_arduino_python:sfbot/sfbot_chassis/sfbot_chassis:sfbot/sfbot_imu/mpu6050_serial_to_imu:sfbot/sfbot_imu/mx_sensor:sfbot/sfbot_itchat:sfbot/sfbot_nav:sfbot/sfbot_rviz:sfbot/sfbot_teleop:sfbot/sfbot_urdf:sfbot/sfbot_vision
+-DCATKIN_DEVEL_PREFIX=/home/sfbot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sfbot/catkin_ws/install -G Unix Makefiles

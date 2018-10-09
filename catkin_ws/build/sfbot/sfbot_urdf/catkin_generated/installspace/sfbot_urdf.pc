@@ -1,0 +1,8 @@
+prefix=/home/sfbot/catkin_ws/install
+
+Name: sfbot_urdf
+Description: Description of sfbot_urdf
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/sfbot/catkin_ws/install/lib 
+Requires: 

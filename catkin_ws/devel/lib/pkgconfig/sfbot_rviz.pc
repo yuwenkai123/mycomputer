@@ -1,0 +1,8 @@
+prefix=/home/sfbot/catkin_ws/devel
+
+Name: sfbot_rviz
+Description: Description of sfbot_rviz
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sfbot/catkin_ws/devel/lib 
+Requires: 

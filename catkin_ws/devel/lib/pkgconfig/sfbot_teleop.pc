@@ -1,0 +1,8 @@
+prefix=/home/sfbot/catkin_ws/devel
+
+Name: sfbot_teleop
+Description: Description of sfbot_teleop
+Version: 2.4.2
+Cflags: 
+Libs: -L/home/sfbot/catkin_ws/devel/lib 
+Requires: roscpp geometry_msgs joy
